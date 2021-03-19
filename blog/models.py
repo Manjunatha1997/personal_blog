@@ -25,3 +25,13 @@ class Skills(models.Model):
     proficiency = models.IntegerField()
 
 
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    subject = models.CharField(max_length=200)
+    email = models.EmailField()
+    message = models.TextField()
+    tel = models.IntegerField()
+
+
+class Portfolio(models.Model):
+    image = models.ImageField(upload_to='media/portfolio')

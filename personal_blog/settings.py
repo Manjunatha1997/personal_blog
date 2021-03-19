@@ -128,14 +128,19 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+
 
 
 
 # email settings
 
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com' # ask IT people
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'lovelymanju198@gmail.com' # your email address
-EMAIL_HOST_PASSWORD = '198.manju' # your password
+EMAIL_HOST_USER = '' # your email address
+EMAIL_HOST_PASSWORD = '' # your password
